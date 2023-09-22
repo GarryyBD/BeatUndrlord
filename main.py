@@ -12,7 +12,7 @@ class MyClient(discord.Client):
         """
         print('Logged on as', self.user)
 
-        channel = self.get_channel(config["CHANNEL_ID"])
+        channel = self.get_channel(int(config["CHANNEL_ID"]))
 
         while True:
             await channel.send(config["MESSAGE"])
