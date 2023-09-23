@@ -16,7 +16,7 @@ class MyClient(discord.Client):
 
         while True:
             await channel.send(config["MESSAGE"])
-            time.sleep(120)
+            time.sleep(60)
 
 
 client = MyClient()
